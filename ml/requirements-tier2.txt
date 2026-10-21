@@ -1,0 +1,14 @@
+# Tier-2 scaling path only: the LSTM autoencoder notebook.
+#
+# Kept separate from requirements.txt because PyTorch is a multi-gigabyte
+# install and NOTHING in the deployed firmware depends on it. The notebook is
+# the research direction, not the product -- see the README section on why the
+# autoencoder deliberately stays off the microcontroller.
+#
+#   py -m pip install -r requirements.txt -r requirements-tier2.txt
+#   py -m pip install jupyterlab      # if you do not already have a notebook host
+
+-r requirements.txt
+
+torch>=2.2
+jupyterlab>=4.0

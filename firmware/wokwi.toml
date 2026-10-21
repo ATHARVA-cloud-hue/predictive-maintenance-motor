@@ -1,0 +1,8 @@
+# Wokwi VS Code extension configuration.
+# Paths are relative to this file, so open `firmware/` as the workspace folder
+# (or add it with File > Add Folder to Workspace) before starting the simulator.
+
+[wokwi]
+version = 1
+firmware = '.pio/build/rpipicow/firmware.uf2'
+elf = '.pio/build/rpipicow/firmware.elf'

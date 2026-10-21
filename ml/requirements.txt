@@ -1,0 +1,18 @@
+# Core pipeline: generate -> extract -> train -> export.
+# Everything that produces the deployed model is in here, and it is deliberately
+# light. Install with:  py -m pip install -r requirements.txt
+#
+# Version floors, not pins: these are the lowest releases with wheels for
+# Python 3.13/3.14. Pinning exact versions in a portfolio repo tends to age into
+# an install that no longer resolves.
+
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+joblib>=1.3
+
+# NOT required here: the Tier-2 LSTM autoencoder notebook needs PyTorch, which
+# is a multi-GB install. It is kept out of this file on purpose so that cloning
+# the repo and reproducing the DEPLOYED model stays a ~60 MB download.
+# See requirements-tier2.txt if you want to run the notebook.
